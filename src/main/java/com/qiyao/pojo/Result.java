@@ -1,8 +1,14 @@
 package com.qiyao.pojo;
 
 
-//统一响应结果
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+//统一响应结果
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Result<T> {
     /**
      * 业务状态码  0-成功  1-失败
@@ -16,12 +22,6 @@ public class Result<T> {
      * 响应数据
      */
     private T data;
-
-    public Result(int code, String message, T data) {
-        this.code = code;
-        this.message = message;
-        this.data = data;
-    }
 
     /**
      * 快速返回操作成功响应结果(带响应数据)
