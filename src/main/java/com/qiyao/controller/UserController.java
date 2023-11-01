@@ -4,10 +4,8 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.qiyao.pojo.Result;
 import com.qiyao.pojo.User;
 import com.qiyao.service.UserService;
-import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
