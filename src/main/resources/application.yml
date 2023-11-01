@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhosty:3306/big_event
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
