@@ -41,7 +41,7 @@ public class UserController {
         User user = userService.findByUsername(username);
 
         // todo
-        if(user == null){
+        if(StringUtils.isEmpty(user)){
             // 没有被注册，需要注册用户
             // 注册用户
             userService.register(username, password);
